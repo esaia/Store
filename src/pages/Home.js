@@ -6,6 +6,8 @@ const MainWrap = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Mukta", sans-serif;
+
   div {
     width: 100%;
     max-width: 1600px;

@@ -14,6 +14,7 @@ const Mainwrap = styled.div`
   display: flex;
   justify-content: flex-start;
   justify-content: center;
+  font-family: "Mukta", sans-serif;
 
   div {
     width: 100%;
