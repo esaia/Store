@@ -60,8 +60,8 @@ const Mainimg = styled.img`
 const Rightsection = styled.div`
   padding: 20px;
   @media only screen and (max-width: 910px) {
-    padding: 0px !important;
-
+    padding: 10px !important;
+    max-width: 90% !important;
     div {
       max-width: 0%;
     }
@@ -72,22 +72,6 @@ const Rightsection = styled.div`
     flex-direction: column;
     gap: 30px;
     max-width: 400px;
-  }
-
-  button {
-    width: 300px;
-    border: none;
-    background-color: #7bbb5d;
-    color: white;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 15px;
-    font-weight: 800;
-    border-radius: 3px;
-    @media only screen and (max-width: 910px) {
-      font-size: 12px;
-      padding: 10px !important;
-    }
   }
 
   hr {
@@ -144,16 +128,6 @@ const Reviews = styled.div`
   justify-content: flex-start;
   gap: 5px !important;
 `;
-const Pricediv = styled.div`
-  display: flex;
-  flex-direction: row !important;
-  justify-content: flex-start;
-  align-items: center;
-
-  @media only screen and (max-width: 910px) {
-    gap: 2px !important;
-  }
-`;
 
 const Price = styled.h3`
   font-size: 25px;
@@ -161,7 +135,35 @@ const Price = styled.h3`
   font-family: "Russo One", sans-serif;
 `;
 
+const Pricediv = styled.div`
+  display: flex;
+  flex-direction: row !important;
+
+  button {
+    width: 300px;
+    border: none;
+    background-color: #7bbb5d;
+    color: white;
+    padding: 10px 10px;
+    max-width: 150px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 800;
+    border-radius: 3px;
+    @media only screen and (max-width: 910px) {
+      font-size: 12px;
+      padding: 10px !important;
+    }
+  }
+
+  @media only screen and (max-width: 910px) {
+    gap: 2px !important;
+  }
+`;
+
 const Quantity = styled.div`
+  flex: 1;
+  align-items: flex-start !important;
   div {
     width: 150px;
     display: flex;

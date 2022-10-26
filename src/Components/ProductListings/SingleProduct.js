@@ -64,12 +64,6 @@ const Details = styled.div`
   flex-direction: column;
   justify-content: space-evenly;
 
-  @media only screen and (max-width: 910px) {
-    h1 {
-      padding: 2px;
-    }
-  }
-
   div {
     display: flex;
     align-items: center;
@@ -101,6 +95,9 @@ const Pricediv = styled.div`
   gap: 5px;
   flex: 1;
   padding: 5px 20px;
+  @media only screen and (max-width: 910px) {
+    padding: 1px 10px !important;
+  }
 `;
 const Ratediv = styled.div`
   display: flex;
@@ -108,6 +105,9 @@ const Ratediv = styled.div`
   gap: 10px;
   flex: 1;
   padding: 5px 20px;
+  @media only screen and (max-width: 910px) {
+    padding: 1px 10px !important;
+  }
 `;
 
 const SingleProduct = ({ item }) => {
